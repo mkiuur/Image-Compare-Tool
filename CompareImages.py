@@ -6,7 +6,7 @@ import MSE
 from MSE import mse
 import numpy as np
 
-def compare_images(imageA, imageB, title):
+def compare_images_plot(imageA, imageB, title):
 	# compute the mean squared error and structural similarity
 	# index for the images
 	m = mse(imageA, imageB)
@@ -24,3 +24,7 @@ def compare_images(imageA, imageB, title):
 	plt.axis("off")
 	# show the images
 	plt.show()
+
+# def compare_images(imageA,imageB):
+# 	return mse(imageA, imageB),ssim(imageA, imageB)
+	

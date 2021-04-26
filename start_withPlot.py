@@ -2,21 +2,20 @@
 # https://www.geeksforgeeks.org/working-images-python/
 # https://www.pyimagesearch.com/2014/09/15/python-compare-two-images/
 # https://scikit-image.org/docs/dev/api/skimage.metrics.html#structural-similarity
-# https://pythonspot.com/files-spreadsheets-csv/
 
+import CompareImages
+from CompareImages import compare_images_plot
+import matplotlib.pyplot as plt
+import PIL
+from PIL import Image
 import cv2
 from cv2 import cv2
 import csv
-import skimage
-from skimage.metrics import structural_similarity as ssim
-# import MSE
-# from MSE import mse
-import time
-from time import process_time
+import numpy as np
 
 images = []
 
-# read images from csv file and convert to grayscale
+# read images from csv file
 with open('ImagesList.csv', newline='') as csvfile:
 	spamreader = csv.reader(csvfile, delimiter=',')
 	for row in spamreader:
@@ -34,24 +33,18 @@ with open('ImagesList.csv', newline='') as csvfile:
 			continue
 
 		# make sure images are the same size and if not, resize
+		# make sure images are the same size and if not, resize
 		if image1.size != image2.size:
 			if image1.size > image2.size:
 				image1 = cv2.resize(image1, (image2.shape[1],image2.shape[0]))
 			else:
 				image2 = cv2.resize(image2, (image1.shape[1],image1.shape[0]))
-		images.append((row[0],row[1],image1,image2))
-		# print(', '.join(row))
+		image1Name = row[0].split("/")[-1]
+		image2Name = row[1].split("/")[-1]
+		images.append((image1Name,image2Name,image1,image2))
+		print(', '.join(row))
 
 # get mse and ssim with plot
-with open('output.csv', 'w') as csvfile:
-	filewriter = csv.writer(csvfile, delimiter=',',
-						quotechar='|', quoting=csv.QUOTE_MINIMAL)
-	filewriter.writerow(["image1","image2","similar","elapsed"])
-	for imagePair in images:
-		# m,s = compare_images(imagePair[2], imagePair[3])
-		t0= time.process_time()
-		s = 1-ssim(imagePair[2], imagePair[3])
-		filewriter.writerow([imagePair[0], imagePair[1],s,str(time.process_time() - t0)])
-
-
-
+for imagePair in images:
+	title = imagePair[0] + " vs. " + imagePair[1]
+	compare_images_plot(imagePair[2], imagePair[3], title)
