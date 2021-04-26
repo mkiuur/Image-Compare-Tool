@@ -15,6 +15,7 @@ import cv2
 from cv2 import cv2
 import csv
 import numpy as np
+import time
 
 images = []
 
@@ -48,6 +49,11 @@ with open('ImagesList.csv', newline='') as csvfile:
 		print(', '.join(row))
 
 # get mse and ssim with plot
-for imagePair in images:
-	title = imagePair[0] + " vs. " + imagePair[1]
-	compare_images_plot(imagePair[2], imagePair[3], title)
+with open('output.csv', 'w') as csvfile:
+	filewriter = csv.writer(csvfile, delimiter=',',
+						quotechar='|', quoting=csv.QUOTE_MINIMAL)
+	filewriter.writerow(["image1","image2","similar","elapsed"])
+	for imagePair in images:
+		title = imagePair[0] + " vs. " + imagePair[1]
+		m,s,elapsed = compare_images_plot(imagePair[2], imagePair[3], title)
+		filewriter.writerow([imagePair[0], imagePair[1],s,str(elapsed)])

@@ -1,9 +1,9 @@
 image1,image2,similar,elapsed
-/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,0.0,0.07751200000000003
-/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/desaturated.png,0.009035580300195356,0.04085300000000025
-/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/composite.png,0.09673329285825527,0.04356099999999996
-/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/resize.png,0.009236764161678734,0.0172279999999998
-images/rgb.png,images/rgb.png,0.0,0.010199000000000069
-images/rgb.png,images/desaturated.png,0.009035580300195356,0.010318000000000271
-images/rgb.png,images/composite.png,0.09673329285825527,0.010602
-images/rgb.png,images/resize.png,0.009236764161678734,0.010626000000000246
+rgb.png,rgb.png,1.0,0.02334499999999995
+rgb.png,desaturated.png,0.9909644196998046,0.02391600000000027
+rgb.png,composite.png,0.9032667071417447,0.024281999999999915
+rgb.png,resize.png,0.9907632358383213,0.024563000000000557
+rgb.png,rgb.png,1.0,0.023934999999999818
+rgb.png,desaturated.png,0.9909644196998046,0.022999000000000436
+rgb.png,composite.png,0.9032667071417447,0.02322800000000047
+rgb.png,resize.png,0.9907632358383213,0.02258499999999941
