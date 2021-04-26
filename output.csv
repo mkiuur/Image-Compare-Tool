@@ -1,9 +1,9 @@
 image1,image2,similar,elapsed
-/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,0.0,0.08198600000000011
-/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/desaturated.png,0.009035580300195356,0.044243000000000254
-/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/composite.png,0.09673329285825527,0.044041
-/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/resize.png,0.009236764161678734,0.04365400000000008
-images/rgb.png,images/rgb.png,0.0,0.044338999999999906
-images/rgb.png,images/desaturated.png,0.009035580300195356,0.043613000000000124
-images/rgb.png,images/composite.png,0.09673329285825527,0.025192000000000103
-images/rgb.png,images/resize.png,0.009236764161678734,0.010716999999999643
+/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,0.0,0.08767000000000014
+/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/desaturated.png,0.009035580300195356,0.041444999999999954
+/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/composite.png,0.09673329285825527,0.04220000000000024
+/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/resize.png,0.009236764161678734,0.04234500000000008
+images/rgb.png,images/rgb.png,0.0,0.01987500000000031
+images/rgb.png,images/desaturated.png,0.009035580300195356,0.010737999999999914
+images/rgb.png,images/composite.png,0.09673329285825527,0.010125000000000384
+images/rgb.png,images/resize.png,0.009236764161678734,0.010804999999999954
