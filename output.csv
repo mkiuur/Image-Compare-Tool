@@ -1,9 +1,9 @@
 image1,image2,similar,elapsed
-/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,0.0,0.08767000000000014
-/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/desaturated.png,0.009035580300195356,0.041444999999999954
-/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/composite.png,0.09673329285825527,0.04220000000000024
-/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/resize.png,0.009236764161678734,0.04234500000000008
-images/rgb.png,images/rgb.png,0.0,0.01987500000000031
-images/rgb.png,images/desaturated.png,0.009035580300195356,0.010737999999999914
-images/rgb.png,images/composite.png,0.09673329285825527,0.010125000000000384
-images/rgb.png,images/resize.png,0.009236764161678734,0.010804999999999954
+/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,0.0,0.07751200000000003
+/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/desaturated.png,0.009035580300195356,0.04085300000000025
+/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/composite.png,0.09673329285825527,0.04356099999999996
+/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/rgb.png,/Users/maggie/Documents/Image Compare Tool/Image-Compare-Tool/images/resize.png,0.009236764161678734,0.0172279999999998
+images/rgb.png,images/rgb.png,0.0,0.010199000000000069
+images/rgb.png,images/desaturated.png,0.009035580300195356,0.010318000000000271
+images/rgb.png,images/composite.png,0.09673329285825527,0.010602
+images/rgb.png,images/resize.png,0.009236764161678734,0.010626000000000246

@@ -1,3 +1,9 @@
+# References:
+# https://www.geeksforgeeks.org/working-images-python/
+
+# using mse will require installing numpy, numpy is not a part of this packages requirements
+# to run mse instead of ssim, numpy will need to be installed
+
 import numpy as np
 
 def mse(imageA, imageB):

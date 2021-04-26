@@ -3,6 +3,9 @@
 # https://www.pyimagesearch.com/2014/09/15/python-compare-two-images/
 # https://scikit-image.org/docs/dev/api/skimage.metrics.html#structural-similarity
 
+# viewing the plots requires matplotlib which is not included in this projects requirements
+# to view the plots you will need to install matplotlib
+
 import CompareImages
 from CompareImages import compare_images_plot
 import matplotlib.pyplot as plt
