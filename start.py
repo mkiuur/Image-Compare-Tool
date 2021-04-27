@@ -15,7 +15,11 @@ import os.path
 from os import path
 
 images = []
+
+# set default input path to testing.csv file
 inputpath = 'testing.csv'
+
+# change input path to images list if .csv file exists in project directory
 if path.exists("imagesList.csv"):
 	inputpath = 'imagesList.csv'
 
@@ -42,18 +46,26 @@ with open(inputpath, newline='') as csvfile:
 				image1 = cv2.resize(image1, (image2.shape[1],image2.shape[0]))
 			else:
 				image2 = cv2.resize(image2, (image1.shape[1],image1.shape[0]))
+
+		# add image pairs and absolute paths to data structure 'images'
 		images.append((row[0],row[1],image1,image2))
 		# print(', '.join(row))
 
-# get mse and ssim with plot
+# open or create output.csv file
 with open('output.csv', 'w') as csvfile:
 	filewriter = csv.writer(csvfile, delimiter=',',
 						quotechar='|', quoting=csv.QUOTE_MINIMAL)
+					
+	# create table headers
 	filewriter.writerow(["image1","image2","similar","elapsed"])
+
+	# for each image pair, calculate ssim
 	for imagePair in images:
 		# m,s = compare_images(imagePair[2], imagePair[3])
 		t0= time.process_time()
 		s = 1-ssim(imagePair[2], imagePair[3])
+
+		# add image absolute paths, ssim, elapsed time to csv file 
 		filewriter.writerow([imagePair[0], imagePair[1],s,str(time.process_time() - t0)])
 
 

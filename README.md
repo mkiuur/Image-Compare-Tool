@@ -4,8 +4,7 @@ This tool compares images using Structural Similarity Index (SSIM) and Mean Squa
 
 - A lower MSE score would denote a similar image with a score of 0 representing two images that are the same.
 - An SSIM score ranges from 1 to -1, a score of 1 referring to identical images.
-  By inputting a .csv file containing the file locations of your desired image pairs, the program will create an output.csv file (example below)
-  containing the normalized SSIM score (1-SSIM), ranging from 0 to 2, and the elapsed time per image pair to run.
+  By inputting a .csv file containing the file locations of your desired image pairs, the program will create an output.csv file (example below) containing the normalized SSIM score (1-SSIM), ranging from 0 to 2, and the elapsed time per image pair to run.
 
 Example output.csv file:
 | image1 | image2 | similar | elapsed |
