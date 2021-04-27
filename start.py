@@ -9,8 +9,6 @@ from cv2 import cv2
 import csv
 import skimage 
 from skimage.metrics import structural_similarity as ssim
-# import MSE
-# from MSE import mse
 import time
 from time import process_time
 
@@ -34,7 +32,7 @@ with open('ImagesList.csv', newline='') as csvfile:
 			continue
 
 		# make sure images are the same size and if not, resize
-		if image1.size != image2.size:
+		if image1.shape != image2.shape:
 			if image1.size > image2.size:
 				image1 = cv2.resize(image1, (image2.shape[1],image2.shape[0]))
 			else:

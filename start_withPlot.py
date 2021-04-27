@@ -38,7 +38,7 @@ with open('ImagesList.csv', newline='') as csvfile:
 
 		# make sure images are the same size and if not, resize
 		# make sure images are the same size and if not, resize
-		if image1.size != image2.size:
+		if image1.shape != image2.shape:
 			if image1.size > image2.size:
 				image1 = cv2.resize(image1, (image2.shape[1],image2.shape[0]))
 			else:
