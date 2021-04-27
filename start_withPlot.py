@@ -8,13 +8,15 @@
 import CompareImages
 from CompareImages import compare_images_plot
 import matplotlib.pyplot as plt
-import PIL
-from PIL import Image
+# import PIL
+# from PIL import Image
 import cv2
 from cv2 import cv2
 import csv
 import numpy as np
 import time
+import os.path
+from os import path
 
 
 images = []
