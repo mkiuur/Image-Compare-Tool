@@ -11,11 +11,16 @@ import skimage
 from skimage.metrics import structural_similarity as ssim
 import time
 from time import process_time
+import os.path
+from os import path
 
 images = []
+inputpath = 'testing.csv'
+if path.exists("imagesList.csv"):
+	inputpath = 'imagesList.csv'
 
 # read images from csv file and convert to grayscale
-with open('ImagesList.csv', newline='') as csvfile:
+with open(inputpath, newline='') as csvfile:
 	spamreader = csv.reader(csvfile, delimiter=',')
 	for row in spamreader:
 		try:

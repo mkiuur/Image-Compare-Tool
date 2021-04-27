@@ -22,18 +22,19 @@ Example output.csv file:
 
 ## Usage
 
-1. Add input imagesList.csv file to project directory containing image pair absolute paths
+1. Add input 'imagesList.csv' file to project directory containing image pair absolute paths
 2. Run `python3 ./start.py` to start the program, or `python3 ./start_withPlot.py` to run the program and view the images pairs, MSE, and SSIM.
-3. Once the program has finished, retrieve output.csv file from project directory
+3. Once the program has finished, retrieve 'output.csv' file from project directory
 
 ## Testing
 
-Test images have been included in the subfolder /images and a testing .csv file has been included
+Test images have been included in the subfolder /images and a 'testing.csv' file has been included. This will be the default
+input file if no 'imagesList.csv' is included in the project directory.
 ![plotExample](/images/plotExample.png)
 
 ## References
 
-https://www.geeksforgeeks.org/working-images-python/
-https://www.pyimagesearch.com/2014/09/15/python-compare-two-images/
-https://scikit-image.org/docs/dev/api/skimage.metrics.html#structural-similarity
-https://pythonspot.com/files-spreadsheets-csv/
+1. https://www.geeksforgeeks.org/working-images-python/
+2. https://www.pyimagesearch.com/2014/09/15/python-compare-two-images/
+3. https://scikit-image.org/docs/dev/api/skimage.metrics.html#structural-similarity
+4. https://pythonspot.com/files-spreadsheets-csv/

@@ -18,9 +18,12 @@ import numpy as np
 import time
 
 images = []
+inputpath = 'testing.csv'
+if path.exists("imagesList.csv"):
+	inputpath = 'imagesList.csv'
 
 # read images from csv file
-with open('ImagesList.csv', newline='') as csvfile:
+with open(inputpath, newline='') as csvfile:
 	spamreader = csv.reader(csvfile, delimiter=',')
 	for row in spamreader:
 		try:
